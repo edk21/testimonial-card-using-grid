@@ -1,0 +1,241 @@
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: auto;
+  background: #cfdbd5;
+}
+.App {
+  font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 150px 150px 150px 150px;
+  grid-template-rows: auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: 
+    "one one two three"
+    "four five five three";
+
+    padding: 40px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, green 0%, lightgreen 35%, blue 65%, red 100%);
+    box-shadow: 4px 4px 5px 10px rgb(0, 0, 0, 0.5);
+}
+img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+/****************************************/
+.one{
+  grid-area: one;
+  background: rgb(112, 61, 198);
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s ease-in-out;
+}
+.one:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.one-header{
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+.one-header svg{
+  font-size: 2rem;
+}
+.onheader-text{
+  padding-left: 1rem;
+}
+.onheader-text p {
+  margin-top: -20px;
+  font-size: 10px;
+  opacity: 0.5;
+}
+.one-body{
+  font-size: 10px;
+  padding: 0 1rem;
+  opacity: 0.8;
+  letter-spacing: 0.05rem;
+}
+.one-footer{
+  padding: 0 1rem 1rem 1rem;
+  font-size: 8px;
+  opacity: 0.5;
+  line-height: 0.7rem;
+}
+/************************************/
+.two{
+  grid-area: two;
+  background: rgb(72, 83, 105);
+  border-radius: 10px;
+  color: white;
+transition: 0.5s ease-in-out;
+}
+.two:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.two-header{
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 10px;
+}
+.two-header svg{
+  font-size: 2rem;
+}
+.twoheader-text{
+  padding-left: 1rem;
+}
+.twoheader-text p {
+  margin-top: -10px;
+  font-size: 9px;
+  opacity: 0.5;
+  margin-right: 2px;
+}
+.two-body{
+  font-size: 8px;
+  padding: 0 1rem;
+  opacity: 0.8;
+  letter-spacing: 0.05rem;
+}
+.two-footer{
+  padding: 0 1rem 1rem 1rem;
+  font-size: 8px;
+  opacity: 0.5;
+  line-height: 0.7rem;
+}
+
+
+/************************************/
+.three{
+  grid-area: three;
+  justify-self: end;
+  background: #fff;
+  border-radius: 10px;
+transition: 0.5s ease-in-out;
+}
+.three:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.three-header{
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 10px;
+}
+.three-header svg{
+  font-size: 2rem;
+}
+.threeheader-text{
+  padding-left: 1rem;
+}
+.threeheader-text p {
+  margin-top: -10px;
+  font-size: 9px;
+  opacity: 0.5;
+  margin-right: 2px;
+}
+.three-body{
+  font-size: 8px;
+  padding: 0 1rem;
+  opacity: 0.8;
+  letter-spacing: 0.05rem;
+}
+.three-footer{
+  padding: 0 1rem 1rem 1rem;
+  font-size: 8px;
+  opacity: 0.5;
+  line-height: 0.7rem;
+}
+
+/************************************/
+.four{
+  grid-area: four;
+  background: #fff;
+  border-radius: 10px;
+transition: 0.5s ease-in-out;
+}
+.four:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.four-header{
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 10px;
+}
+.four-header svg{
+  font-size: 2rem;
+}
+.fourheader-text{
+  padding-left: 1rem;
+}
+.fourheader-text p {
+  margin-top: -10px;
+  font-size: 9px;
+  opacity: 0.5;
+  margin-right: 2px;
+}
+.four-body{
+  font-size: 8px;
+  padding: 0 1rem;
+  opacity: 0.8;
+  letter-spacing: 0.05rem;
+}
+.four-footer{
+  padding: 0 1rem 1rem 1rem;
+  font-size: 8px;
+  opacity: 0.5;
+  line-height: 0.7rem;
+}
+
+
+/*************************************/
+.five{
+  grid-area: five;
+  background: rgb(27, 34, 47);
+  border-radius: 10px;
+  color: white;
+transition: 0.5s ease-in-out;
+}
+.five:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.five-header{
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  font-size: 10px;
+}
+.five-header svg{
+  font-size: 2rem;
+}
+.fiveheader-text{
+  padding-left: 1rem;
+}
+.fiveheader-text p {
+  margin-top: -10px;
+  font-size: 10px;
+  opacity: 0.5;
+}
+.five-body{
+  font-size: 8px;
+  padding: 0 1rem;
+  opacity: 0.8;
+  letter-spacing: 0.05rem;
+}
+.five-footer{
+  padding: 0 1rem 1rem 1rem;
+  font-size: 8px;
+  opacity: 0.5;
+  line-height: 0.7rem;
+}
