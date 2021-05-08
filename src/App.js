@@ -5,7 +5,6 @@ export default function App() {
     <div className="App">
      <div className="one">
       <div className="one-header">
-        {/* <BiFace/> */}
         <img src="/images/image-daniel.jpg" alt=""/>
         <div className="onheader-text">
         <h3>Daniel</h3>
